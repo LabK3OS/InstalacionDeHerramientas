@@ -1,6 +1,7 @@
 # Instalación de herramientas de K3OS
 
 ## 1. Creación de imagen de Raspbian
+Descargar Raspberry Pi Imager en https://www.raspberrypi.org/downloads/ e instalar la version por defecto de Raspbian en la microSD 
 
 
 ## 2. Instalación de herramientas
@@ -30,14 +31,57 @@ sudo apt-get install libglfw3
 
 ```
 
- ### Habilitar cámara y periféricos:
+### Habilitar cámara y periféricos:
  
- ```
- sudo raspi-config
- Navegar en el menu, y activar la camara
- ```
- ### Instalación de Minecraft
- TODO  minecraft + libreria minecraft
+```
+sudo raspi-config
+Navegar en el menu, y activar la camara
+```
+### Instalación de Minecraft
+TODO  minecraft + libreria minecraft
 
 
 ## 3. Instalación de dependencias
+
+
+### Actualizar e instalar dependencias de compilación de dlib
+```
+sudo apt update
+sudo apt full-upgrade
+sudo rpi-update
+sudo apt install build-essential cmake
+sudo apt install libboost-all-dev
+sudo apt install libgtk-3-dev
+```
+### Cambiar tamaño del swap:
+```
+sudo nano /etc/dphys-swapfile
+```
+Cambiar CONF_SWAPSIZE=1024 por CONF_SWAPSIZE=100, guardar con ctrl+o, Enter, salir con ctrl+x
+```
+sudo /etc/init.d/dphys-swapfile restart
+```
+### Instalar dlib:
+```
+mkdir -p dlib
+git clone -b 'v19.6' --single-branch https://github.com/davisking/dlib.git dlib/
+cd ./dlib
+sudo python3 setup.py install --compiler-flags "-mfpu=neon"
+```
+### Cambiar tamaño del swap de nuevo:
+```
+sudo nano /etc/dphys-swapfile
+```
+Cambiar CONF_SWAPSIZE=1024 por CONF_SWAPSIZE=100, guardar con ctrl+o, Enter, salir con ctrl+x
+```
+sudo /etc/init.d/dphys-swapfile restart
+```
+
+### Instalar libreria face
+```
+sudo pip3 install face_recognition
+sudo apt install libatlas-base-dev
+```
+
+### Instalar libreria de Matriz de leds
+TODO, talvez no sea necesario
