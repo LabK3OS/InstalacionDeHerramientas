@@ -85,3 +85,7 @@ sudo apt install libatlas-base-dev
 
 ### Instalar libreria de Matriz de leds
 TODO, talvez no sea necesario
+
+## 4. Modificar EduBlocks
+    Remplazar en.js del repositorio en /opt/edublocks-desktop/ui/dist.
+    Remplazar setup.js del repositorio en /opt/edublocks-desktop/ui/blockly/msg/js
