@@ -87,5 +87,5 @@ sudo apt install libatlas-base-dev
 TODO, talvez no sea necesario
 
 ## 4. Modificar EduBlocks
-    Remplazar en.js del repositorio en /opt/edublocks-desktop/ui/dist.
-    Remplazar setup.js del repositorio en /opt/edublocks-desktop/ui/blockly/msg/js
+    Remplazar main.js del repositorio en /opt/edublocks-desktop/ui/dist.
+    Remplazar en.js del repositorio en /opt/edublocks-desktop/ui/blockly/msg/js
