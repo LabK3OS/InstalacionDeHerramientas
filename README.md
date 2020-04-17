@@ -84,7 +84,7 @@ sudo apt install libatlas-base-dev
 ```
 
 ### Instalar libreria de Matriz de leds
-TODO, talvez no sea necesario
+	pip3 install RPimax7219
 
 ## 4. Modificar EduBlocks
     Remplazar main.js del repositorio en /opt/edublocks-desktop/ui/dist.
