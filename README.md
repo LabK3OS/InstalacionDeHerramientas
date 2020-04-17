@@ -89,3 +89,4 @@ TODO, talvez no sea necesario
 ## 4. Modificar EduBlocks
     Remplazar main.js del repositorio en /opt/edublocks-desktop/ui/dist.
     Remplazar en.js del repositorio en /opt/edublocks-desktop/ui/blockly/msg/js
+    Remplazar carpeta script-includes en /opt/edublocks-desktop
