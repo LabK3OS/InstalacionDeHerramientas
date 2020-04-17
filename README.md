@@ -90,3 +90,4 @@ sudo apt install libatlas-base-dev
     Remplazar main.js del repositorio en /opt/edublocks-desktop/ui/dist.
     Remplazar en.js del repositorio en /opt/edublocks-desktop/ui/blockly/msg/js
     Remplazar carpeta script-includes en /opt/edublocks-desktop
+	Crear carpeta /home/pi/Desktop/.Extras/ y copiar en su interior el archivo "Memorial Lane.otf"
