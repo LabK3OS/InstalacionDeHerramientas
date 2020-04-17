@@ -24,6 +24,11 @@ cd /opt/
 sudo chmod 777 -R edublocks-desktop/
 ```   
    
+### Instalación de Pygal:
+```
+pip3 install pygal
+```
+
 ### Instalación de Processing: 
 ```
 pip3 install p5
